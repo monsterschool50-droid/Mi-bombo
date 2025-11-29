@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Жалпы жөндөөлөр */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e; /* Кара фон */
+    color: #cdd6f4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #252538;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Сол жак (Sidebar) */
+.sidebar {
+    width: 35%;
+    background-color: #181825;
+    padding: 30px;
+    text-align: center;
+    color: #a6adc8;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    background-color: #313244;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #89b4fa;
+    border: 3px solid #89b4fa;
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #89b4fa; /* Неон көк */
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.contact-info .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.contact-info i {
+    color: #89b4fa;
+}
+
+.skills-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.skills-section h3, .languages h3 {
+    color: #fff;
+    border-bottom: 2px solid #313244;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    background: #313244;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Оң жак (Main Content) */
+.main-content {
+    width: 65%;
+    padding: 40px;
+}
+
+.section-title {
+    color: #89b4fa;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border-bottom: 2px solid #45475a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Проект карталары */
+.project-card {
+    background-color: #313244;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #a6e3a1; /* Жашыл сызык */
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.project-header h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.tech-tag {
+    background-color: #181825;
+    color: #a6e3a1; /* Жашыл текст */
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.education-item h4 {
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.date {
+    font-size: 0.85em;
+    color: #7f849c;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Мобилдик адаптация */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
